@@ -1,4 +1,4 @@
-// Polyphills for includes -
+// // Polyphills for includes -
 
 // let arr = [2,3,4]
 
@@ -19,7 +19,7 @@
 // }
 
 
-// polyphills for map 
+// // polyphills for map 
 
 // let arr = [2,3,4]
 
@@ -44,21 +44,31 @@
 // console.log(ans)
 
 
-// poluphills for reduce
+// // poluphills for reduce
 
-let arr = [2,3,4,4]
+// let arr = [2,3,4,4]
 
-Array.prototype.myReduce = function(callback,initialValue){
-    let acc = initialValue !== undefined ? initialValue : this[0]
+// Array.prototype.myReduce = function(callback,initialValue){
+//     let acc = initialValue !== undefined ? initialValue : this[0]
 
-    let startIndex = initialValue !==undefined? 0 :1
+//         if(typeof(callback) ! ="function"){
+//             throw new Error("not a function")
+//         }
 
-    for(let i=startIndex; i<this.length; i++){
-        acc = callback(acc,this[i])
-    }
+//     let startIndex = initialValue !==undefined? 0 :1
 
-    return acc
-}
+//     for(let i=startIndex; i<this.length; i++){
+//         acc = callback(acc,this[i])
+//     }
 
-let ans = arr.myReduce((x,y)=>x+y,0)
-console.log(ans)
+//     return acc
+// }
+
+// let ans = arr.myReduce((x,y)=>x+y,0)
+// console.log(ans)
+
+
+// // polyphills for from
+
+// let ans = Array.from([2,3,4],x=>x+2)
+// console.log(ans)
