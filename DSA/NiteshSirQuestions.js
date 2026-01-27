@@ -105,12 +105,117 @@
 
 // Output: 3
 
-const frequentNum = (arr)=>{
-    let demo = new Set()
-    let 
+// const frequentNum = (arr)=>{
+//     let obj = {}
+//     let mostFrequent = null
+//     let maxCount = 0
+
+//     for(let i=0; i<arr.length; i++){
+//         let num = arr[i]
+
+//         obj[num] = (obj[num] || 0) +1
+
+//         if(obj[num]>maxCount){
+//             maxCount = obj[num]
+//             mostFrequent = num
+//         }
+//     }
+
+//     return mostFrequent
+// }
+
+// let arr= [1, 2, 2, 3, 3, 3, 4]
+// console.log(frequentNum(arr))
 
 
-}
+
+//Q->>>>>>>>>>>>>>Find longest word in a string
+
+// Input: "I love programming"
+
+// Output: "programming"
+
+// const solve = (str)=>{
+//     let count = 0
+//     let longest = null
+//     let arr = str.split(" ")
+//     console.log(arr)
+    
+//     for(let i=0; i<arr.length; i++){
+//         let n = arr[i].length
+
+//         if(n>count){
+//             count = n
+//             longest = arr[i]
+//         }
+//     }
+
+//     return longest
+// }
+// let str = "I love programming"
+
+// console.log(solve(str))
+
+
+// q->>>>>>>>>>>>>>>>>>>>Count occurrences of each character
+
+// let str = "apple"
+
+// Output: {a:1, p:2, l:1, e:1}
+
+// const solve = (str)=>{
+//     let obj = {}
+
+//     for(let ch of str){
+//         if(!obj[ch]){
+//             obj[ch] = 1
+//         }else{
+//             obj[ch]++
+//         }
+//     }
+
+//     return obj
+// }
+
+// console.log(solve(str))
+
+
+
+//Q--------------->Group objects by property
+
+// Input:
+
+// let arr = [
+//   {name:"Alice", role:"dev"},
+//   {name:"Bob", role:"tester"},
+//   {name:"Eve", role:"dev"}
+// ]
+
+// Output:
+
+// {
+//   dev: [{name:"Alice", role:"dev"}, {name:"Eve", role:"dev"}],
+//   tester: [{name:"Bob", role:"tester"}]
+// }
+
+// const solve = (arr)=>{
+//     let obj = {}
+
+//     for(let x of arr){
+//         if(!obj[x.role]){
+//             obj[x.role] = []
+//         }
+
+//         obj[x.role].push(x.name)
+//     }
+
+//     return obj
+// }
+
+// console.log(solve(arr))
+
+
+
 
 
 
