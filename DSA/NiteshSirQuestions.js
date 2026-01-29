@@ -215,9 +215,78 @@
 // console.log(solve(arr))
 
 
+// Q-----------> flat array
+// let arr = [1, [2, [3, [4]]]]
+
+// const solve = (arr)=>{
+//    let ans = []
+
+//    for(let x of arr){
+//     if(Array.isArray(x)){
+//         ans.push(...solve(x))
+//     }else{
+//         ans.push(x)
+//     }
+//    }
+
+//    return ans
+// }
+
+// console.log(solve(arr))
 
 
 
+//Q-----------> 
+
+// const obj = {
+//   a: 1,
+//   b: {
+//     c: 2,
+//     d: {
+//       e: 3
+//     }
+//   }
+// }
+
+// const solve = (obj,initialkey , result = {}) =>{
+    
+//     for(let key in obj){
+//         let value = obj[key]
+
+//         let newKey = initialkey ? initialkey + "." + key : key
+
+//         if(typeof(key) === "object" && !Array.isArray(key) && key!=null){
+//             solve(key,newKey,result)
+//         }else{
+            
+//         }
+//     }
+// }
+
+
+// Q-------------> pair sum 
+
+const arr = [1,2,3,5,6,8]
+let target = 6
+
+const findPairSum = (arr,k)=>{
+  let seen = new Set()
+  let demo = []
+
+  for(let i=0; i<arr.length; i++){
+    let need = k-arr[i]
+
+    if(!seen.has(need)){
+      seen.add(arr[i])
+    }else{
+      demo.push(need,arr[i])
+    }
+  }
+
+  return demo
+}
+
+console.log(findPairSum(arr,target))
 
 
 
